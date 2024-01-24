@@ -1,0 +1,850 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		173EB83AEE4DE656E72BEE42 /* Pods_RookMotionSDKSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A42ACB17228BC3EB37365C0 /* Pods_RookMotionSDKSample.framework */; };
+		AD06304729F1B3EB00F34FDD /* MySensorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06304629F1B3EB00F34FDD /* MySensorsView.swift */; };
+		AD06304929F1B44700F34FDD /* MySensorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06304829F1B44700F34FDD /* MySensorViewModel.swift */; };
+		AD06304C29F1B53E00F34FDD /* UserSensorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06304B29F1B53E00F34FDD /* UserSensorViewModel.swift */; };
+		AD447BDE293EF38900B6DB21 /* RookWatchSDKDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD447BDD293EF38900B6DB21 /* RookWatchSDKDemoApp.swift */; };
+		AD447BE0293EF38900B6DB21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD447BDF293EF38900B6DB21 /* ContentView.swift */; };
+		AD447BE2293EF38A00B6DB21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD447BE1293EF38A00B6DB21 /* Assets.xcassets */; };
+		AD447BE5293EF38A00B6DB21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD447BE4293EF38A00B6DB21 /* Preview Assets.xcassets */; };
+		AD4DB5BF2B61D5410087DB45 /* TrainingTypeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DB5BE2B61D5410087DB45 /* TrainingTypeSelector.swift */; };
+		AD66A2222910A2590057FCB9 /* TrainingSummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD66A2212910A2590057FCB9 /* TrainingSummaryController.swift */; };
+		AD66A2252910A50A0057FCB9 /* TrainingSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD66A2242910A50A0057FCB9 /* TrainingSummaryView.swift */; };
+		AD66A2292910DBB10057FCB9 /* TrainingTypesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD66A2282910DBB10057FCB9 /* TrainingTypesView.swift */; };
+		AD66A22C2910DBDA0057FCB9 /* TrainingtypesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD66A22B2910DBDA0057FCB9 /* TrainingtypesViewModel.swift */; };
+		AD66A22F2910E6C20057FCB9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD66A22E2910E6C20057FCB9 /* HomeView.swift */; };
+		AD8F3AEF29122CDC001DEF04 /* TrainingViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8F3AEE29122CDC001DEF04 /* TrainingViewRepresentable.swift */; };
+		AD8F3AF129123BD0001DEF04 /* TrainingSensorSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8F3AF029123BD0001DEF04 /* TrainingSensorSelector.swift */; };
+		AD8F3AF42912CBC1001DEF04 /* TrainingHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8F3AF32912CBC1001DEF04 /* TrainingHistoryView.swift */; };
+		AD8F3AF62912CBE5001DEF04 /* TrainingHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8F3AF52912CBE5001DEF04 /* TrainingHistoryViewModel.swift */; };
+		AD8F3AF92912D15D001DEF04 /* UserTraining.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8F3AF82912D15D001DEF04 /* UserTraining.swift */; };
+		AD9B64A927E137B500C3745E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B64A827E137B500C3745E /* AppDelegate.swift */; };
+		AD9B64AB27E137B500C3745E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B64AA27E137B500C3745E /* SceneDelegate.swift */; };
+		AD9B64B027E137B500C3745E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9B64AE27E137B500C3745E /* Main.storyboard */; };
+		AD9B64B227E137B800C3745E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9B64B127E137B800C3745E /* Assets.xcassets */; };
+		AD9B64B527E137B800C3745E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9B64B327E137B800C3745E /* LaunchScreen.storyboard */; };
+		AD9B64C227E14AA500C3745E /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B64C127E14AA500C3745E /* TrainingViewController.swift */; };
+		ADBAF124293E5508000188D1 /* UnfinishedTrianingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBAF123293E5508000188D1 /* UnfinishedTrianingsView.swift */; };
+		ADBAF126293E5515000188D1 /* PendningTrianingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBAF125293E5515000188D1 /* PendningTrianingsViewModel.swift */; };
+		ADD4A47C2910F87D009D1CB9 /* HomeHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4A47B2910F87D009D1CB9 /* HomeHostingController.swift */; };
+		ADD4A47E29110387009D1CB9 /* AddUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4A47D29110387009D1CB9 /* AddUserView.swift */; };
+		ADD4A4802911042D009D1CB9 /* UserHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4A47F2911042D009D1CB9 /* UserHome.swift */; };
+		ADD4A4832911758B009D1CB9 /* AddUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4A4822911758B009D1CB9 /* AddUserViewModel.swift */; };
+		ADD4A48629118D01009D1CB9 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4A48529118D01009D1CB9 /* UserInfoView.swift */; };
+		ADD4A488291192DC009D1CB9 /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4A487291192DC009D1CB9 /* UserInfoViewModel.swift */; };
+		ADD4A48B2911964C009D1CB9 /* RookUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4A48A2911964C009D1CB9 /* RookUserInfo.swift */; };
+		ADD4A48E29119E64009D1CB9 /* UpdateUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4A48D29119E64009D1CB9 /* UpdateUserInfoView.swift */; };
+		ADD4A49029119F0E009D1CB9 /* UpdateUserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4A48F29119F0E009D1CB9 /* UpdateUserInfoViewModel.swift */; };
+		ADD4A4932911DB82009D1CB9 /* SensorScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4A4922911DB82009D1CB9 /* SensorScannerView.swift */; };
+		ADD4A4952911DC04009D1CB9 /* SensorScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4A4942911DC04009D1CB9 /* SensorScannerViewModel.swift */; };
+		ADD4A4982911DD3A009D1CB9 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4A4972911DD3A009D1CB9 /* Sensor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A42ACB17228BC3EB37365C0 /* Pods_RookMotionSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RookMotionSDKSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD06304629F1B3EB00F34FDD /* MySensorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySensorsView.swift; sourceTree = "<group>"; };
+		AD06304829F1B44700F34FDD /* MySensorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySensorViewModel.swift; sourceTree = "<group>"; };
+		AD06304B29F1B53E00F34FDD /* UserSensorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSensorViewModel.swift; sourceTree = "<group>"; };
+		AD447BDB293EF38900B6DB21 /* RookWatchSDKDemo Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RookWatchSDKDemo Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD447BDD293EF38900B6DB21 /* RookWatchSDKDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RookWatchSDKDemoApp.swift; sourceTree = "<group>"; };
+		AD447BDF293EF38900B6DB21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AD447BE1293EF38A00B6DB21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD447BE4293EF38A00B6DB21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD4DB5BE2B61D5410087DB45 /* TrainingTypeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingTypeSelector.swift; sourceTree = "<group>"; };
+		AD66A2212910A2590057FCB9 /* TrainingSummaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingSummaryController.swift; sourceTree = "<group>"; };
+		AD66A2242910A50A0057FCB9 /* TrainingSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingSummaryView.swift; sourceTree = "<group>"; };
+		AD66A2282910DBB10057FCB9 /* TrainingTypesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingTypesView.swift; sourceTree = "<group>"; };
+		AD66A22B2910DBDA0057FCB9 /* TrainingtypesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingtypesViewModel.swift; sourceTree = "<group>"; };
+		AD66A22E2910E6C20057FCB9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AD8F3AEE29122CDC001DEF04 /* TrainingViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewRepresentable.swift; sourceTree = "<group>"; };
+		AD8F3AF029123BD0001DEF04 /* TrainingSensorSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingSensorSelector.swift; sourceTree = "<group>"; };
+		AD8F3AF32912CBC1001DEF04 /* TrainingHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingHistoryView.swift; sourceTree = "<group>"; };
+		AD8F3AF52912CBE5001DEF04 /* TrainingHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingHistoryViewModel.swift; sourceTree = "<group>"; };
+		AD8F3AF82912D15D001DEF04 /* UserTraining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTraining.swift; sourceTree = "<group>"; };
+		AD9B64A527E137B500C3745E /* RookMotionSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RookMotionSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD9B64A827E137B500C3745E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD9B64AA27E137B500C3745E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AD9B64AF27E137B500C3745E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD9B64B127E137B800C3745E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD9B64B427E137B800C3745E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD9B64B627E137B800C3745E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD9B64C127E14AA500C3745E /* TrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
+		ADBAF123293E5508000188D1 /* UnfinishedTrianingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfinishedTrianingsView.swift; sourceTree = "<group>"; };
+		ADBAF125293E5515000188D1 /* PendningTrianingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendningTrianingsViewModel.swift; sourceTree = "<group>"; };
+		ADD4A47B2910F87D009D1CB9 /* HomeHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHostingController.swift; sourceTree = "<group>"; };
+		ADD4A47D29110387009D1CB9 /* AddUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserView.swift; sourceTree = "<group>"; };
+		ADD4A47F2911042D009D1CB9 /* UserHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHome.swift; sourceTree = "<group>"; };
+		ADD4A4822911758B009D1CB9 /* AddUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewModel.swift; sourceTree = "<group>"; };
+		ADD4A48529118D01009D1CB9 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		ADD4A487291192DC009D1CB9 /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
+		ADD4A48A2911964C009D1CB9 /* RookUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RookUserInfo.swift; sourceTree = "<group>"; };
+		ADD4A48D29119E64009D1CB9 /* UpdateUserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserInfoView.swift; sourceTree = "<group>"; };
+		ADD4A48F29119F0E009D1CB9 /* UpdateUserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserInfoViewModel.swift; sourceTree = "<group>"; };
+		ADD4A4922911DB82009D1CB9 /* SensorScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorScannerView.swift; sourceTree = "<group>"; };
+		ADD4A4942911DC04009D1CB9 /* SensorScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorScannerViewModel.swift; sourceTree = "<group>"; };
+		ADD4A4972911DD3A009D1CB9 /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
+		C7186964F9A71F4457059F17 /* Pods-RookMotionSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RookMotionSDKSample.debug.xcconfig"; path = "Target Support Files/Pods-RookMotionSDKSample/Pods-RookMotionSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
+		FC7E12767CF1EB461B938AFD /* Pods-RookMotionSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RookMotionSDKSample.release.xcconfig"; path = "Target Support Files/Pods-RookMotionSDKSample/Pods-RookMotionSDKSample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD447BD8293EF38900B6DB21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9B64A227E137B500C3745E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				173EB83AEE4DE656E72BEE42 /* Pods_RookMotionSDKSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E3B48C2DDDBED64791B6966 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7186964F9A71F4457059F17 /* Pods-RookMotionSDKSample.debug.xcconfig */,
+				FC7E12767CF1EB461B938AFD /* Pods-RookMotionSDKSample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		80F4A2ADE044D19CDF442BE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A42ACB17228BC3EB37365C0 /* Pods_RookMotionSDKSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD06304529F1B3B000F34FDD /* MySensors */ = {
+			isa = PBXGroup;
+			children = (
+				AD06304A29F1B4BE00F34FDD /* Entities */,
+				AD06304629F1B3EB00F34FDD /* MySensorsView.swift */,
+				AD06304829F1B44700F34FDD /* MySensorViewModel.swift */,
+				AD06304B29F1B53E00F34FDD /* UserSensorViewModel.swift */,
+			);
+			name = MySensors;
+			sourceTree = "<group>";
+		};
+		AD06304A29F1B4BE00F34FDD /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		AD447BDC293EF38900B6DB21 /* RookWatchSDKDemo Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				AD447BDD293EF38900B6DB21 /* RookWatchSDKDemoApp.swift */,
+				AD447BDF293EF38900B6DB21 /* ContentView.swift */,
+				AD447BE1293EF38A00B6DB21 /* Assets.xcassets */,
+				AD447BE3293EF38A00B6DB21 /* Preview Content */,
+			);
+			path = "RookWatchSDKDemo Watch App";
+			sourceTree = "<group>";
+		};
+		AD447BE3293EF38A00B6DB21 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AD447BE4293EF38A00B6DB21 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD66A2202910A2370057FCB9 /* Training */ = {
+			isa = PBXGroup;
+			children = (
+				AD66A2232910A4EF0057FCB9 /* SwiftUI */,
+				AD9B64C127E14AA500C3745E /* TrainingViewController.swift */,
+				AD66A2212910A2590057FCB9 /* TrainingSummaryController.swift */,
+				AD8F3AEE29122CDC001DEF04 /* TrainingViewRepresentable.swift */,
+				AD8F3AF029123BD0001DEF04 /* TrainingSensorSelector.swift */,
+				AD4DB5BE2B61D5410087DB45 /* TrainingTypeSelector.swift */,
+			);
+			name = Training;
+			sourceTree = "<group>";
+		};
+		AD66A2232910A4EF0057FCB9 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				AD66A2242910A50A0057FCB9 /* TrainingSummaryView.swift */,
+			);
+			name = SwiftUI;
+			sourceTree = "<group>";
+		};
+		AD66A2262910DACA0057FCB9 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				ADD4A48C29119E49009D1CB9 /* UpdateUser */,
+				ADD4A48429118B0B009D1CB9 /* UserInfo */,
+				ADD4A48129117577009D1CB9 /* AddUser */,
+				ADD4A47F2911042D009D1CB9 /* UserHome.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		AD66A22A2910DBC30057FCB9 /* TrainingTypes */ = {
+			isa = PBXGroup;
+			children = (
+				AD66A2282910DBB10057FCB9 /* TrainingTypesView.swift */,
+				AD66A22B2910DBDA0057FCB9 /* TrainingtypesViewModel.swift */,
+			);
+			name = TrainingTypes;
+			sourceTree = "<group>";
+		};
+		AD66A22D2910E6A90057FCB9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AD66A22E2910E6C20057FCB9 /* HomeView.swift */,
+				ADD4A47B2910F87D009D1CB9 /* HomeHostingController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		AD8F3AF22912CB8D001DEF04 /* TrainingHistory */ = {
+			isa = PBXGroup;
+			children = (
+				AD8F3AF72912D14A001DEF04 /* Entities */,
+				AD8F3AF32912CBC1001DEF04 /* TrainingHistoryView.swift */,
+				AD8F3AF52912CBE5001DEF04 /* TrainingHistoryViewModel.swift */,
+			);
+			name = TrainingHistory;
+			sourceTree = "<group>";
+		};
+		AD8F3AF72912D14A001DEF04 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				AD8F3AF82912D15D001DEF04 /* UserTraining.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		AD9B649C27E137B500C3745E = {
+			isa = PBXGroup;
+			children = (
+				AD9B64A727E137B500C3745E /* RookMotionSDKSample */,
+				AD447BDC293EF38900B6DB21 /* RookWatchSDKDemo Watch App */,
+				AD9B64A627E137B500C3745E /* Products */,
+				3E3B48C2DDDBED64791B6966 /* Pods */,
+				80F4A2ADE044D19CDF442BE7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AD9B64A627E137B500C3745E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD9B64A527E137B500C3745E /* RookMotionSDKSample.app */,
+				AD447BDB293EF38900B6DB21 /* RookWatchSDKDemo Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD9B64A727E137B500C3745E /* RookMotionSDKSample */ = {
+			isa = PBXGroup;
+			children = (
+				AD9B64BE27E138C500C3745E /* Controller */,
+				AD9B64BC27E138B400C3745E /* Model */,
+				AD9B64A827E137B500C3745E /* AppDelegate.swift */,
+				AD9B64AA27E137B500C3745E /* SceneDelegate.swift */,
+				AD9B64AE27E137B500C3745E /* Main.storyboard */,
+				AD9B64B127E137B800C3745E /* Assets.xcassets */,
+				AD9B64B327E137B800C3745E /* LaunchScreen.storyboard */,
+				AD9B64B627E137B800C3745E /* Info.plist */,
+			);
+			path = RookMotionSDKSample;
+			sourceTree = "<group>";
+		};
+		AD9B64BC27E138B400C3745E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AD9B64BE27E138C500C3745E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ADBAF122293E54DD000188D1 /* PendingTrainings */,
+				AD8F3AF22912CB8D001DEF04 /* TrainingHistory */,
+				ADD4A4912911DB71009D1CB9 /* Sensor */,
+				AD66A22D2910E6A90057FCB9 /* Home */,
+				AD66A2262910DACA0057FCB9 /* User */,
+				AD66A22A2910DBC30057FCB9 /* TrainingTypes */,
+				AD66A2202910A2370057FCB9 /* Training */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		ADBAF122293E54DD000188D1 /* PendingTrainings */ = {
+			isa = PBXGroup;
+			children = (
+				ADBAF123293E5508000188D1 /* UnfinishedTrianingsView.swift */,
+				ADBAF125293E5515000188D1 /* PendningTrianingsViewModel.swift */,
+			);
+			name = PendingTrainings;
+			sourceTree = "<group>";
+		};
+		ADD4A48129117577009D1CB9 /* AddUser */ = {
+			isa = PBXGroup;
+			children = (
+				ADD4A47D29110387009D1CB9 /* AddUserView.swift */,
+				ADD4A4822911758B009D1CB9 /* AddUserViewModel.swift */,
+			);
+			name = AddUser;
+			sourceTree = "<group>";
+		};
+		ADD4A48429118B0B009D1CB9 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				ADD4A4892911962C009D1CB9 /* Entities */,
+				ADD4A48529118D01009D1CB9 /* UserInfoView.swift */,
+				ADD4A487291192DC009D1CB9 /* UserInfoViewModel.swift */,
+			);
+			name = UserInfo;
+			sourceTree = "<group>";
+		};
+		ADD4A4892911962C009D1CB9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				ADD4A48A2911964C009D1CB9 /* RookUserInfo.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		ADD4A48C29119E49009D1CB9 /* UpdateUser */ = {
+			isa = PBXGroup;
+			children = (
+				ADD4A48D29119E64009D1CB9 /* UpdateUserInfoView.swift */,
+				ADD4A48F29119F0E009D1CB9 /* UpdateUserInfoViewModel.swift */,
+			);
+			name = UpdateUser;
+			sourceTree = "<group>";
+		};
+		ADD4A4912911DB71009D1CB9 /* Sensor */ = {
+			isa = PBXGroup;
+			children = (
+				AD06304529F1B3B000F34FDD /* MySensors */,
+				ADD4A4962911DD26009D1CB9 /* Entities */,
+				ADD4A4922911DB82009D1CB9 /* SensorScannerView.swift */,
+				ADD4A4942911DC04009D1CB9 /* SensorScannerViewModel.swift */,
+			);
+			name = Sensor;
+			sourceTree = "<group>";
+		};
+		ADD4A4962911DD26009D1CB9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				ADD4A4972911DD3A009D1CB9 /* Sensor.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD447BDA293EF38900B6DB21 /* RookWatchSDKDemo Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD447BE8293EF38A00B6DB21 /* Build configuration list for PBXNativeTarget "RookWatchSDKDemo Watch App" */;
+			buildPhases = (
+				AD447BD7293EF38900B6DB21 /* Sources */,
+				AD447BD8293EF38900B6DB21 /* Frameworks */,
+				AD447BD9293EF38900B6DB21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RookWatchSDKDemo Watch App";
+			productName = "RookWatchSDKDemo Watch App";
+			productReference = AD447BDB293EF38900B6DB21 /* RookWatchSDKDemo Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD9B64A427E137B500C3745E /* RookMotionSDKSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD9B64B927E137B800C3745E /* Build configuration list for PBXNativeTarget "RookMotionSDKSample" */;
+			buildPhases = (
+				3B801873674E8F3B70B89C66 /* [CP] Check Pods Manifest.lock */,
+				AD9B64A127E137B500C3745E /* Sources */,
+				AD9B64A227E137B500C3745E /* Frameworks */,
+				AD9B64A327E137B500C3745E /* Resources */,
+				C94068554B23375160280F20 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RookMotionSDKSample;
+			productName = RookMotionSDKSample;
+			productReference = AD9B64A527E137B500C3745E /* RookMotionSDKSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD9B649D27E137B500C3745E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					AD447BDA293EF38900B6DB21 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					AD9B64A427E137B500C3745E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = AD9B64A027E137B500C3745E /* Build configuration list for PBXProject "RookMotionSDKSample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD9B649C27E137B500C3745E;
+			productRefGroup = AD9B64A627E137B500C3745E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD9B64A427E137B500C3745E /* RookMotionSDKSample */,
+				AD447BDA293EF38900B6DB21 /* RookWatchSDKDemo Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD447BD9293EF38900B6DB21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD447BE5293EF38A00B6DB21 /* Preview Assets.xcassets in Resources */,
+				AD447BE2293EF38A00B6DB21 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9B64A327E137B500C3745E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9B64B527E137B800C3745E /* LaunchScreen.storyboard in Resources */,
+				AD9B64B227E137B800C3745E /* Assets.xcassets in Resources */,
+				AD9B64B027E137B500C3745E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B801873674E8F3B70B89C66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RookMotionSDKSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C94068554B23375160280F20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RookMotionSDKSample/Pods-RookMotionSDKSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RookMotionSDKSample/Pods-RookMotionSDKSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RookMotionSDKSample/Pods-RookMotionSDKSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD447BD7293EF38900B6DB21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD447BE0293EF38900B6DB21 /* ContentView.swift in Sources */,
+				AD447BDE293EF38900B6DB21 /* RookWatchSDKDemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9B64A127E137B500C3745E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD06304729F1B3EB00F34FDD /* MySensorsView.swift in Sources */,
+				AD66A22F2910E6C20057FCB9 /* HomeView.swift in Sources */,
+				ADD4A48629118D01009D1CB9 /* UserInfoView.swift in Sources */,
+				ADD4A488291192DC009D1CB9 /* UserInfoViewModel.swift in Sources */,
+				ADD4A48B2911964C009D1CB9 /* RookUserInfo.swift in Sources */,
+				ADD4A4802911042D009D1CB9 /* UserHome.swift in Sources */,
+				ADD4A4832911758B009D1CB9 /* AddUserViewModel.swift in Sources */,
+				ADD4A49029119F0E009D1CB9 /* UpdateUserInfoViewModel.swift in Sources */,
+				ADD4A47E29110387009D1CB9 /* AddUserView.swift in Sources */,
+				ADD4A4932911DB82009D1CB9 /* SensorScannerView.swift in Sources */,
+				ADD4A47C2910F87D009D1CB9 /* HomeHostingController.swift in Sources */,
+				AD4DB5BF2B61D5410087DB45 /* TrainingTypeSelector.swift in Sources */,
+				AD66A2252910A50A0057FCB9 /* TrainingSummaryView.swift in Sources */,
+				AD9B64A927E137B500C3745E /* AppDelegate.swift in Sources */,
+				AD8F3AF42912CBC1001DEF04 /* TrainingHistoryView.swift in Sources */,
+				ADD4A4982911DD3A009D1CB9 /* Sensor.swift in Sources */,
+				ADBAF126293E5515000188D1 /* PendningTrianingsViewModel.swift in Sources */,
+				ADD4A48E29119E64009D1CB9 /* UpdateUserInfoView.swift in Sources */,
+				AD06304C29F1B53E00F34FDD /* UserSensorViewModel.swift in Sources */,
+				AD66A2222910A2590057FCB9 /* TrainingSummaryController.swift in Sources */,
+				ADD4A4952911DC04009D1CB9 /* SensorScannerViewModel.swift in Sources */,
+				AD8F3AEF29122CDC001DEF04 /* TrainingViewRepresentable.swift in Sources */,
+				AD06304929F1B44700F34FDD /* MySensorViewModel.swift in Sources */,
+				AD66A22C2910DBDA0057FCB9 /* TrainingtypesViewModel.swift in Sources */,
+				AD8F3AF92912D15D001DEF04 /* UserTraining.swift in Sources */,
+				ADBAF124293E5508000188D1 /* UnfinishedTrianingsView.swift in Sources */,
+				AD8F3AF62912CBE5001DEF04 /* TrainingHistoryViewModel.swift in Sources */,
+				AD9B64C227E14AA500C3745E /* TrainingViewController.swift in Sources */,
+				AD66A2292910DBB10057FCB9 /* TrainingTypesView.swift in Sources */,
+				AD8F3AF129123BD0001DEF04 /* TrainingSensorSelector.swift in Sources */,
+				AD9B64AB27E137B500C3745E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AD9B64AE27E137B500C3745E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD9B64AF27E137B500C3745E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD9B64B327E137B800C3745E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD9B64B427E137B800C3745E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD447BE6293EF38A00B6DB21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RookWatchSDKDemo Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = WGGJK9F34K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RookWatchSDKDemo;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		AD447BE7293EF38A00B6DB21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RookWatchSDKDemo Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = WGGJK9F34K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RookWatchSDKDemo;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		AD9B64B727E137B800C3745E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD9B64B827E137B800C3745E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD9B64BA27E137B800C3745E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7186964F9A71F4457059F17 /* Pods-RookMotionSDKSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WGGJK9F34K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RookMotionSDKSample/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Allow Bluetooth access to connect with your training sensors devices.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Allow Bluetooth access to connect with your training sensors devices.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rookdev.rookmotion.RookMotionSDKSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AD9B64BB27E137B800C3745E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC7E12767CF1EB461B938AFD /* Pods-RookMotionSDKSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WGGJK9F34K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RookMotionSDKSample/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Allow Bluetooth access to connect with your training sensors devices.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Allow Bluetooth access to connect with your training sensors devices.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rookdev.rookmotion.RookMotionSDKSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD447BE8293EF38A00B6DB21 /* Build configuration list for PBXNativeTarget "RookWatchSDKDemo Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD447BE6293EF38A00B6DB21 /* Debug */,
+				AD447BE7293EF38A00B6DB21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD9B64A027E137B500C3745E /* Build configuration list for PBXProject "RookMotionSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD9B64B727E137B800C3745E /* Debug */,
+				AD9B64B827E137B800C3745E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD9B64B927E137B800C3745E /* Build configuration list for PBXNativeTarget "RookMotionSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD9B64BA27E137B800C3745E /* Debug */,
+				AD9B64BB27E137B800C3745E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD9B649D27E137B500C3745E /* Project object */;
+}

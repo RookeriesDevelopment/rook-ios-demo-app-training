@@ -1,0 +1,32 @@
+{
+  "name": "RookMotionSDK",
+  "version": "1.0.23",
+  "summary": "RookMotion iOS Lib",
+  "description": "RookMotion iOS sdk allows the implementation of the RookMotion functionalities required to add training measurement, tracking, and analysis to an iOS APP",
+  "homepage": "https://github.com/RookeriesDevelopment/rook-ios-sdk-training-pod.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "RookMotion": "cesar.vargas@rookmotion.com"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "swift_versions": "5.0",
+  "source": {
+    "git": "https://github.com/RookeriesDevelopment/rook-ios-sdk-training-pod.git",
+    "tag": "1.0.23"
+  },
+  "frameworks": [
+    "SystemConfiguration",
+    "CoreBluetooth",
+    "UIKit",
+    "CoreData"
+  ],
+  "ios": {
+    "vendored_frameworks": "RookMotionSDK.xcframework"
+  },
+  "swift_version": "5.0"
+}

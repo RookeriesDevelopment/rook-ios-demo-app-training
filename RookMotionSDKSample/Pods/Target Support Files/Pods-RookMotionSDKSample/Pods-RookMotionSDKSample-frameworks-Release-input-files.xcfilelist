@@ -1,0 +1,2 @@
+${PODS_ROOT}/Target Support Files/Pods-RookMotionSDKSample/Pods-RookMotionSDKSample-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/RookMotionSDK/RookMotionSDK.framework/RookMotionSDK

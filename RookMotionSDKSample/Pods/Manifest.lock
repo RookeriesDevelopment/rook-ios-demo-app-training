@@ -1,0 +1,22 @@
+PODS:
+  - RookMotionSDK (1.0.23)
+
+DEPENDENCIES:
+  - RookMotionSDK (from `https://github.com/RookeriesDevelopment/rook-ios-sdk-training-pod.git`, tag `1.0.23`)
+
+EXTERNAL SOURCES:
+  RookMotionSDK:
+    :git: https://github.com/RookeriesDevelopment/rook-ios-sdk-training-pod.git
+    :tag: 1.0.23
+
+CHECKOUT OPTIONS:
+  RookMotionSDK:
+    :git: https://github.com/RookeriesDevelopment/rook-ios-sdk-training-pod.git
+    :tag: 1.0.23
+
+SPEC CHECKSUMS:
+  RookMotionSDK: 2dc6e08da252fdabb91725d2ce290a1db2ff06e6
+
+PODFILE CHECKSUM: 8e8d7a961e9d3cfaf312c4db331aa1ce0a3d0c2a
+
+COCOAPODS: 1.13.0

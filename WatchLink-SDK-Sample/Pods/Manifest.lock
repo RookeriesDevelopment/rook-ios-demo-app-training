@@ -1,0 +1,29 @@
+PODS:
+  - RookMotionSDK (1.0.23)
+  - RookMotionWatchLink (1.0.19)
+
+DEPENDENCIES:
+  - RookMotionSDK (from `https://github.com/RookeriesDevelopment/rook-ios-sdk-training-pod.git`)
+  - RookMotionWatchLink (from `https://github.com/RookeriesDevelopment/rook-ios-sdk-training-watch-pod.git`)
+
+EXTERNAL SOURCES:
+  RookMotionSDK:
+    :git: https://github.com/RookeriesDevelopment/rook-ios-sdk-training-pod.git
+  RookMotionWatchLink:
+    :git: https://github.com/RookeriesDevelopment/rook-ios-sdk-training-watch-pod.git
+
+CHECKOUT OPTIONS:
+  RookMotionSDK:
+    :commit: 91bd3b3927a555115f410a49a5ff9c0db12041ef
+    :git: https://github.com/RookeriesDevelopment/rook-ios-sdk-training-pod.git
+  RookMotionWatchLink:
+    :commit: f3c667e610c53f4e7f3bd6bc0e57f656a38f28e7
+    :git: https://github.com/RookeriesDevelopment/rook-ios-sdk-training-watch-pod.git
+
+SPEC CHECKSUMS:
+  RookMotionSDK: 2dc6e08da252fdabb91725d2ce290a1db2ff06e6
+  RookMotionWatchLink: f220f0f3eb85ac93841d1463e8f8464498743eef
+
+PODFILE CHECKSUM: 2fb99d76d0ff00b246cceab3d4ea0a56c1046fa4
+
+COCOAPODS: 1.13.0

@@ -1,0 +1,31 @@
+{
+  "name": "RookMotionWatchLink",
+  "version": "1.0.19",
+  "summary": "RookMotion Watch OS Lib",
+  "description": "RookMotion Watch link allows the implementation of the RookMotion functionalities required to add training measurement, tracking, and analysis to an watch app",
+  "homepage": "https://github.com/RookeriesDevelopment/rook-ios-sdk-training-watch-pod.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "RookMotion": "francisco.guerrero@rookmotion.com"
+  },
+  "swift_versions": "5.0",
+  "source": {
+    "git": "https://github.com/RookeriesDevelopment/rook-ios-sdk-training-watch-pod.git",
+    "tag": "1.0.19"
+  },
+  "frameworks": [
+    "WatchKit",
+    "HealthKit",
+    "WatchConnectivity"
+  ],
+  "platforms": {
+    "watchos": "6.2"
+  },
+  "watchos": {
+    "vendored_frameworks": "RookMotionWatchLink.xcframework"
+  },
+  "swift_version": "5.0"
+}

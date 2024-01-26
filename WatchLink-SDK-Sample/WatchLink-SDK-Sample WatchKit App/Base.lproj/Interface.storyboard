@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="21225" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="21040"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="sample_app" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Sync" id="JM4-SA-Uer">
+                            <connections>
+                                <action selector="syncButtonTap" destination="AgC-eL-Hgc" id="40M-v9-1gx"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="345" y="-156"/>
+        </scene>
+        <!--workoutListInterface-->
+        <scene sceneID="1dO-Bc-MjY">
+            <objects>
+                <controller identifier="workoutListInterface" id="EQP-ip-qMa" customClass="WorkoutListInterface" customModule="WatchLink_SDK_Sample_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" spacing="9" id="1xb-fI-6MW">
+                            <items>
+                                <tableRow identifier="workoutRow" id="DOg-B3-y12" customClass="WorkoutRowView" customModule="WatchLink_SDK_Sample_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="PVy-lw-vZQ">
+                                        <items>
+                                            <label width="1" alignment="left" verticalAlignment="center" id="ODL-78-F9b"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="workoutLabel" destination="ODL-78-F9b" id="KWh-vV-Uwi"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="workoutTable" destination="1xb-fI-6MW" id="le5-l0-jkr"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="620" y="-156"/>
+        </scene>
+        <!--trainingControlsInterface-->
+        <scene sceneID="M15-Og-207">
+            <objects>
+                <controller identifier="trainingControlsInterface" id="xGk-vO-tSU" customClass="TrainingControlsInterface" customModule="WatchLink_SDK_Sample_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" spacing="14" id="kgZ-bC-8Bz">
+                            <items>
+                                <group width="1" height="0.28000000000000003" alignment="left" id="Gai-Vp-8KC">
+                                    <items>
+                                        <button width="1" height="1" alignment="left" title="Start" id="XMZ-4D-yhC">
+                                            <color key="backgroundColor" red="0.15631672473261199" green="0.7009699206159572" blue="0.21447771140820987" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="21"/>
+                                            <connections>
+                                                <action selector="startPauseButtonTap" destination="xGk-vO-tSU" id="FFU-Pw-kWp"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.28000000000000003" alignment="left" id="fbE-yf-Zjh">
+                                    <items>
+                                        <button width="1" height="1" alignment="left" hidden="YES" title="Stop" id="gsF-Te-36z">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" red="0.99697154759999995" green="0.13101454400000001" blue="0.070896208739999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="21"/>
+                                            <connections>
+                                                <action selector="stopButtonTap" destination="xGk-vO-tSU" id="5z1-7N-haE"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" hidden="YES" id="ro0-nd-gze">
+                                    <items>
+                                        <button width="1" alignment="left" title="Resume Later" id="Emw-Lt-7yw">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" red="1" green="0.55866840309999999" blue="0.081650631139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="21"/>
+                                            <connections>
+                                                <action selector="stopLaterTap" destination="xGk-vO-tSU" id="Aru-JG-RNo"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="StopButton" destination="gsF-Te-36z" id="HjQ-Vt-eAq"/>
+                        <outlet property="resumLaterButtonGroup" destination="ro0-nd-gze" id="72H-xl-Yqy"/>
+                        <outlet property="startPauseButton" destination="XMZ-4D-yhC" id="8uk-W7-6y1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="886" y="-156"/>
+        </scene>
+        <!--trainingMetricsInterface-->
+        <scene sceneID="HXG-2Z-Ft6">
+            <objects>
+                <controller identifier="trainingMetricsInterface" id="fcx-Re-aXh" customClass="TrainingMetricsInterface" customModule="WatchLink_SDK_Sample_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="00:00:00" id="WnG-Wn-iQD">
+                            <color key="textColor" red="0.99697154760360718" green="0.88913025443035232" blue="0.13483193503198032" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                        </label>
+                        <group width="1" alignment="left" spacing="4" id="7wB-c5-Ka0">
+                            <items>
+                                <label alignment="left" text="0" id="1aB-UG-nDk">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                                </label>
+                                <label alignment="left" verticalAlignment="center" text="kcal" id="WVo-YM-cU1">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" spacing="4" id="2lO-Ud-B2g">
+                            <items>
+                                <label alignment="left" text="0" id="NUx-RB-000">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                                </label>
+                                <label alignment="left" verticalAlignment="bottom" text="bpm" id="Ibt-Y3-Yy4">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                </label>
+                                <imageView width="20" height="20" alignment="left" verticalAlignment="center" image="suit.heart.fill" catalog="system" contentMode="scaleAspectFit" id="797-Gk-cV1">
+                                    <color key="tintColor" red="0.99697154760360718" green="0.13101454395000986" blue="0.070896208739270869" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </imageView>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" spacing="4" id="kRe-q9-7hb">
+                            <items>
+                                <label alignment="left" text="0" id="4Eq-30-3FD">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                                </label>
+                                <label alignment="left" verticalAlignment="bottom" text="%" id="ttK-xG-LQm">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="caloriesLabel" destination="1aB-UG-nDk" id="ybm-WY-gca"/>
+                        <outlet property="effortLabel" destination="4Eq-30-3FD" id="bO0-5U-Oni"/>
+                        <outlet property="hearRateLabel" destination="NUx-RB-000" id="3rN-Xs-4ps"/>
+                        <outlet property="trainingDuration" destination="WnG-Wn-iQD" id="6aV-V7-Ech"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1140" y="-156"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="sample_app" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="sample_app" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="suit.heart.fill" catalog="system" width="128" height="105"/>
+    </resources>
+</document>

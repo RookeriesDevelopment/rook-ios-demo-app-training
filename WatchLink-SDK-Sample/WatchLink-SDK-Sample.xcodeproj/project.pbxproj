@@ -1,0 +1,945 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		325CF95B61189BA09C0CE118 /* Pods_WatchLink_SDK_Sample_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85EC860546B5B9FCBB0F334 /* Pods_WatchLink_SDK_Sample_WatchKit_Extension.framework */; };
+		9136E5E6FD80F4227E0F0D30 /* Pods_WatchLink_SDK_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A69D408564C24731C369B3E2 /* Pods_WatchLink_SDK_Sample.framework */; };
+		9D3150A66A93E99ACA2D8517 /* Pods_WatchLink_SDK_Sample_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67037E4EDF03CA670F0A2F18 /* Pods_WatchLink_SDK_Sample_WatchKit_App.framework */; };
+		AD0CCC2428109137004D165C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0CCC2328109137004D165C /* HealthKit.framework */; };
+		AD0E861828210D3B00600DE9 /* HistoryTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0E861728210D3B00600DE9 /* HistoryTableController.swift */; };
+		AD4E269329411F490045D863 /* UnfinishedTrainingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E269229411F490045D863 /* UnfinishedTrainingsView.swift */; };
+		AD4E269529411F990045D863 /* UnfinishedTrainingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E269429411F990045D863 /* UnfinishedTrainingsViewModel.swift */; };
+		AD4E2697294122100045D863 /* UnfinishTrainignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E2696294122100045D863 /* UnfinishTrainignViewController.swift */; };
+		AD94C6992817A647004F70A7 /* TrainingMetricsInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD94C6982817A647004F70A7 /* TrainingMetricsInterface.swift */; };
+		AD94C69B2817A675004F70A7 /* TrainingControlsInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD94C69A2817A675004F70A7 /* TrainingControlsInterface.swift */; };
+		AD94C69F2817C735004F70A7 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD94C69E2817C735004F70A7 /* HealthKit.framework */; };
+		AD94C6A22817D17D004F70A7 /* WorkoutRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD94C6A12817D17D004F70A7 /* WorkoutRowView.swift */; };
+		AD94C6AA2817D7F3004F70A7 /* WorkoutListInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD94C6A92817D7F3004F70A7 /* WorkoutListInterface.swift */; };
+		ADA3227D280F603500A89666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3227C280F603500A89666 /* AppDelegate.swift */; };
+		ADA3227F280F603500A89666 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3227E280F603500A89666 /* SceneDelegate.swift */; };
+		ADA32281280F603500A89666 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA32280280F603500A89666 /* ViewController.swift */; };
+		ADA32284280F603500A89666 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA32282280F603500A89666 /* Main.storyboard */; };
+		ADA32286280F603600A89666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA32285280F603600A89666 /* Assets.xcassets */; };
+		ADA32289280F603600A89666 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA32287280F603600A89666 /* LaunchScreen.storyboard */; };
+		ADA3228E280F603700A89666 /* sample_app.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = ADA3228D280F603700A89666 /* sample_app.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ADA32294280F603700A89666 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA32292280F603700A89666 /* Interface.storyboard */; };
+		ADA32296280F603800A89666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA32295280F603800A89666 /* Assets.xcassets */; };
+		ADA3229C280F603800A89666 /* WatchLink-SDK-Sample WatchKit Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = ADA3229B280F603800A89666 /* WatchLink-SDK-Sample WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ADA322A1280F603800A89666 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA322A0280F603800A89666 /* InterfaceController.swift */; };
+		ADA322A3280F603800A89666 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA322A2280F603800A89666 /* ExtensionDelegate.swift */; };
+		ADA322A5280F603800A89666 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA322A4280F603800A89666 /* NotificationController.swift */; };
+		ADA322A7280F603800A89666 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA322A6280F603800A89666 /* ComplicationController.swift */; };
+		ADA322A9280F603900A89666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA322A8280F603900A89666 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADA3228F280F603700A89666 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADA32271280F603500A89666 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADA3228C280F603700A89666;
+			remoteInfo = "WatchLink-SDK-Sample WatchKit App";
+		};
+		ADA3229D280F603800A89666 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADA32271280F603500A89666 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADA3229A280F603800A89666;
+			remoteInfo = "WatchLink-SDK-Sample WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ADA322B1280F603900A89666 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ADA3229C280F603800A89666 /* WatchLink-SDK-Sample WatchKit Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA322B5280F603900A89666 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				ADA3228E280F603700A89666 /* sample_app.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C5F2CB841AB48581E043A32 /* Pods-WatchLink-SDK-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchLink-SDK-Sample.release.xcconfig"; path = "Target Support Files/Pods-WatchLink-SDK-Sample/Pods-WatchLink-SDK-Sample.release.xcconfig"; sourceTree = "<group>"; };
+		0C7EB311A8CC5E219E1CC62D /* Pods-WatchLink-SDK-Sample WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchLink-SDK-Sample WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-WatchLink-SDK-Sample WatchKit Extension/Pods-WatchLink-SDK-Sample WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		3B55FCA0C765ED5123D73094 /* Pods-WatchLink-SDK-Sample WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchLink-SDK-Sample WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-WatchLink-SDK-Sample WatchKit Extension/Pods-WatchLink-SDK-Sample WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		66E900507A0BC1DEA0FA957C /* Pods-WatchLink-SDK-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchLink-SDK-Sample.debug.xcconfig"; path = "Target Support Files/Pods-WatchLink-SDK-Sample/Pods-WatchLink-SDK-Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		67037E4EDF03CA670F0A2F18 /* Pods_WatchLink_SDK_Sample_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchLink_SDK_Sample_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88C9F7B6C82EF7330C3E39CE /* Pods-WatchLink-SDK-Sample WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchLink-SDK-Sample WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-WatchLink-SDK-Sample WatchKit App/Pods-WatchLink-SDK-Sample WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		A289A60411834763EED86B40 /* Pods-WatchLink-SDK-Sample WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchLink-SDK-Sample WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-WatchLink-SDK-Sample WatchKit App/Pods-WatchLink-SDK-Sample WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		A69D408564C24731C369B3E2 /* Pods_WatchLink_SDK_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchLink_SDK_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD0CCC1F280F7993004D165C /* RookMotionWatchLink.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RookMotionWatchLink.xcframework; path = ../RookMotionWatchLink/build/RookMotionWatchLink.xcframework; sourceTree = "<group>"; };
+		AD0CCC2328109137004D165C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		AD0E861728210D3B00600DE9 /* HistoryTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableController.swift; sourceTree = "<group>"; };
+		AD41D431290889540099E6C0 /* RookMotionWatchLink.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RookMotionWatchLink.xcframework; path = Pods/RookMotionWatchLink/RookMotionWatchLink.xcframework; sourceTree = "<group>"; };
+		AD4E269229411F490045D863 /* UnfinishedTrainingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfinishedTrainingsView.swift; sourceTree = "<group>"; };
+		AD4E269429411F990045D863 /* UnfinishedTrainingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfinishedTrainingsViewModel.swift; sourceTree = "<group>"; };
+		AD4E2696294122100045D863 /* UnfinishTrainignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfinishTrainignViewController.swift; sourceTree = "<group>"; };
+		AD94C6982817A647004F70A7 /* TrainingMetricsInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingMetricsInterface.swift; sourceTree = "<group>"; };
+		AD94C69A2817A675004F70A7 /* TrainingControlsInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingControlsInterface.swift; sourceTree = "<group>"; };
+		AD94C69C2817C71E004F70A7 /* WatchLink-SDK-Sample WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchLink-SDK-Sample WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		AD94C69D2817C735004F70A7 /* WatchLink-SDK-Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchLink-SDK-Sample.entitlements"; sourceTree = "<group>"; };
+		AD94C69E2817C735004F70A7 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		AD94C6A12817D17D004F70A7 /* WorkoutRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRowView.swift; sourceTree = "<group>"; };
+		AD94C6A92817D7F3004F70A7 /* WorkoutListInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListInterface.swift; sourceTree = "<group>"; };
+		ADA32279280F603500A89666 /* WatchLink-SDK-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchLink-SDK-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA3227C280F603500A89666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADA3227E280F603500A89666 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ADA32280280F603500A89666 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADA32283280F603500A89666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADA32285280F603600A89666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADA32288280F603600A89666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADA3228A280F603600A89666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA3228D280F603700A89666 /* sample_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA32293280F603700A89666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		ADA32295280F603800A89666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADA3229B280F603800A89666 /* WatchLink-SDK-Sample WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchLink-SDK-Sample WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA322A0280F603800A89666 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		ADA322A2280F603800A89666 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		ADA322A4280F603800A89666 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		ADA322A6280F603800A89666 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		ADA322A8280F603900A89666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADA322AA280F603900A89666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA322AB280F603900A89666 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D85EC860546B5B9FCBB0F334 /* Pods_WatchLink_SDK_Sample_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchLink_SDK_Sample_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58F47747FE26B9497FC3D9C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D3150A66A93E99ACA2D8517 /* Pods_WatchLink_SDK_Sample_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA32276280F603500A89666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD94C69F2817C735004F70A7 /* HealthKit.framework in Frameworks */,
+				9136E5E6FD80F4227E0F0D30 /* Pods_WatchLink_SDK_Sample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA32298280F603800A89666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD0CCC2428109137004D165C /* HealthKit.framework in Frameworks */,
+				325CF95B61189BA09C0CE118 /* Pods_WatchLink_SDK_Sample_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C2854362441F293958A9477 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66E900507A0BC1DEA0FA957C /* Pods-WatchLink-SDK-Sample.debug.xcconfig */,
+				0C5F2CB841AB48581E043A32 /* Pods-WatchLink-SDK-Sample.release.xcconfig */,
+				88C9F7B6C82EF7330C3E39CE /* Pods-WatchLink-SDK-Sample WatchKit App.debug.xcconfig */,
+				A289A60411834763EED86B40 /* Pods-WatchLink-SDK-Sample WatchKit App.release.xcconfig */,
+				3B55FCA0C765ED5123D73094 /* Pods-WatchLink-SDK-Sample WatchKit Extension.debug.xcconfig */,
+				0C7EB311A8CC5E219E1CC62D /* Pods-WatchLink-SDK-Sample WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1C3B4C381814F396391CCE65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD41D431290889540099E6C0 /* RookMotionWatchLink.xcframework */,
+				AD94C69E2817C735004F70A7 /* HealthKit.framework */,
+				AD0CCC2328109137004D165C /* HealthKit.framework */,
+				AD0CCC1F280F7993004D165C /* RookMotionWatchLink.xcframework */,
+				A69D408564C24731C369B3E2 /* Pods_WatchLink_SDK_Sample.framework */,
+				67037E4EDF03CA670F0A2F18 /* Pods_WatchLink_SDK_Sample_WatchKit_App.framework */,
+				D85EC860546B5B9FCBB0F334 /* Pods_WatchLink_SDK_Sample_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD4E269129411F320045D863 /* Unfinished Trainings */ = {
+			isa = PBXGroup;
+			children = (
+				AD4E269229411F490045D863 /* UnfinishedTrainingsView.swift */,
+				AD4E269429411F990045D863 /* UnfinishedTrainingsViewModel.swift */,
+				AD4E2696294122100045D863 /* UnfinishTrainignViewController.swift */,
+			);
+			path = "Unfinished Trainings";
+			sourceTree = "<group>";
+		};
+		AD94C6A02817D114004F70A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD94C6A12817D17D004F70A7 /* WorkoutRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADA32270280F603400A89666 = {
+			isa = PBXGroup;
+			children = (
+				ADA3227B280F603500A89666 /* WatchLink-SDK-Sample */,
+				ADA32291280F603700A89666 /* WatchLink-SDK-Sample WatchKit App */,
+				ADA3229F280F603800A89666 /* WatchLink-SDK-Sample WatchKit Extension */,
+				ADA3227A280F603500A89666 /* Products */,
+				1C2854362441F293958A9477 /* Pods */,
+				1C3B4C381814F396391CCE65 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ADA3227A280F603500A89666 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADA32279280F603500A89666 /* WatchLink-SDK-Sample.app */,
+				ADA3228D280F603700A89666 /* sample_app.app */,
+				ADA3229B280F603800A89666 /* WatchLink-SDK-Sample WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADA3227B280F603500A89666 /* WatchLink-SDK-Sample */ = {
+			isa = PBXGroup;
+			children = (
+				AD4E269129411F320045D863 /* Unfinished Trainings */,
+				AD94C69D2817C735004F70A7 /* WatchLink-SDK-Sample.entitlements */,
+				ADA3227C280F603500A89666 /* AppDelegate.swift */,
+				ADA3227E280F603500A89666 /* SceneDelegate.swift */,
+				ADA32280280F603500A89666 /* ViewController.swift */,
+				AD0E861728210D3B00600DE9 /* HistoryTableController.swift */,
+				ADA32282280F603500A89666 /* Main.storyboard */,
+				ADA32285280F603600A89666 /* Assets.xcassets */,
+				ADA32287280F603600A89666 /* LaunchScreen.storyboard */,
+				ADA3228A280F603600A89666 /* Info.plist */,
+			);
+			path = "WatchLink-SDK-Sample";
+			sourceTree = "<group>";
+		};
+		ADA32291280F603700A89666 /* WatchLink-SDK-Sample WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				ADA32292280F603700A89666 /* Interface.storyboard */,
+				ADA32295280F603800A89666 /* Assets.xcassets */,
+			);
+			path = "WatchLink-SDK-Sample WatchKit App";
+			sourceTree = "<group>";
+		};
+		ADA3229F280F603800A89666 /* WatchLink-SDK-Sample WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AD94C6A02817D114004F70A7 /* View */,
+				AD94C69C2817C71E004F70A7 /* WatchLink-SDK-Sample WatchKit Extension.entitlements */,
+				ADA322A0280F603800A89666 /* InterfaceController.swift */,
+				AD94C6982817A647004F70A7 /* TrainingMetricsInterface.swift */,
+				AD94C69A2817A675004F70A7 /* TrainingControlsInterface.swift */,
+				AD94C6A92817D7F3004F70A7 /* WorkoutListInterface.swift */,
+				ADA322A2280F603800A89666 /* ExtensionDelegate.swift */,
+				ADA322A4280F603800A89666 /* NotificationController.swift */,
+				ADA322A6280F603800A89666 /* ComplicationController.swift */,
+				ADA322A8280F603900A89666 /* Assets.xcassets */,
+				ADA322AA280F603900A89666 /* Info.plist */,
+				ADA322AB280F603900A89666 /* PushNotificationPayload.apns */,
+			);
+			path = "WatchLink-SDK-Sample WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADA32278280F603500A89666 /* WatchLink-SDK-Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA322B6280F603900A89666 /* Build configuration list for PBXNativeTarget "WatchLink-SDK-Sample" */;
+			buildPhases = (
+				D0E140E78F5029B81C82C3E9 /* [CP] Check Pods Manifest.lock */,
+				ADA32275280F603500A89666 /* Sources */,
+				ADA32276280F603500A89666 /* Frameworks */,
+				ADA32277280F603500A89666 /* Resources */,
+				ADA322B5280F603900A89666 /* Embed Watch Content */,
+				42E4CF2E25F91AB7022B2676 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADA32290280F603700A89666 /* PBXTargetDependency */,
+			);
+			name = "WatchLink-SDK-Sample";
+			productName = "WatchLink-SDK-Sample";
+			productReference = ADA32279280F603500A89666 /* WatchLink-SDK-Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADA3228C280F603700A89666 /* WatchLink-SDK-Sample WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA322B2280F603900A89666 /* Build configuration list for PBXNativeTarget "WatchLink-SDK-Sample WatchKit App" */;
+			buildPhases = (
+				C37C8E3CEC008BCBBEB67F24 /* [CP] Check Pods Manifest.lock */,
+				ADA3228B280F603700A89666 /* Resources */,
+				ADA322B1280F603900A89666 /* Embed Foundation Extensions */,
+				58F47747FE26B9497FC3D9C8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADA3229E280F603800A89666 /* PBXTargetDependency */,
+			);
+			name = "WatchLink-SDK-Sample WatchKit App";
+			productName = "WatchLink-SDK-Sample WatchKit App";
+			productReference = ADA3228D280F603700A89666 /* sample_app.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		ADA3229A280F603800A89666 /* WatchLink-SDK-Sample WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA322AE280F603900A89666 /* Build configuration list for PBXNativeTarget "WatchLink-SDK-Sample WatchKit Extension" */;
+			buildPhases = (
+				5D601651B3CE55D01A61595C /* [CP] Check Pods Manifest.lock */,
+				ADA32297280F603800A89666 /* Sources */,
+				ADA32298280F603800A89666 /* Frameworks */,
+				ADA32299280F603800A89666 /* Resources */,
+				A7BB12406807E18CFB700D5E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchLink-SDK-Sample WatchKit Extension";
+			productName = "WatchLink-SDK-Sample WatchKit Extension";
+			productReference = ADA3229B280F603800A89666 /* WatchLink-SDK-Sample WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADA32271280F603500A89666 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					ADA32278280F603500A89666 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					ADA3228C280F603700A89666 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					ADA3229A280F603800A89666 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = ADA32274280F603500A89666 /* Build configuration list for PBXProject "WatchLink-SDK-Sample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADA32270280F603400A89666;
+			productRefGroup = ADA3227A280F603500A89666 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADA32278280F603500A89666 /* WatchLink-SDK-Sample */,
+				ADA3228C280F603700A89666 /* WatchLink-SDK-Sample WatchKit App */,
+				ADA3229A280F603800A89666 /* WatchLink-SDK-Sample WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADA32277280F603500A89666 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA32289280F603600A89666 /* LaunchScreen.storyboard in Resources */,
+				ADA32286280F603600A89666 /* Assets.xcassets in Resources */,
+				ADA32284280F603500A89666 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA3228B280F603700A89666 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA32296280F603800A89666 /* Assets.xcassets in Resources */,
+				ADA32294280F603700A89666 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA32299280F603800A89666 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA322A9280F603900A89666 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42E4CF2E25F91AB7022B2676 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchLink-SDK-Sample/Pods-WatchLink-SDK-Sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchLink-SDK-Sample/Pods-WatchLink-SDK-Sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatchLink-SDK-Sample/Pods-WatchLink-SDK-Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D601651B3CE55D01A61595C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchLink-SDK-Sample WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7BB12406807E18CFB700D5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchLink-SDK-Sample WatchKit Extension/Pods-WatchLink-SDK-Sample WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchLink-SDK-Sample WatchKit Extension/Pods-WatchLink-SDK-Sample WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatchLink-SDK-Sample WatchKit Extension/Pods-WatchLink-SDK-Sample WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C37C8E3CEC008BCBBEB67F24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchLink-SDK-Sample WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0E140E78F5029B81C82C3E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchLink-SDK-Sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADA32275280F603500A89666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA32281280F603500A89666 /* ViewController.swift in Sources */,
+				AD4E269529411F990045D863 /* UnfinishedTrainingsViewModel.swift in Sources */,
+				AD0E861828210D3B00600DE9 /* HistoryTableController.swift in Sources */,
+				ADA3227D280F603500A89666 /* AppDelegate.swift in Sources */,
+				AD4E2697294122100045D863 /* UnfinishTrainignViewController.swift in Sources */,
+				ADA3227F280F603500A89666 /* SceneDelegate.swift in Sources */,
+				AD4E269329411F490045D863 /* UnfinishedTrainingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA32297280F603800A89666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD94C6992817A647004F70A7 /* TrainingMetricsInterface.swift in Sources */,
+				AD94C69B2817A675004F70A7 /* TrainingControlsInterface.swift in Sources */,
+				AD94C6A22817D17D004F70A7 /* WorkoutRowView.swift in Sources */,
+				ADA322A5280F603800A89666 /* NotificationController.swift in Sources */,
+				ADA322A7280F603800A89666 /* ComplicationController.swift in Sources */,
+				AD94C6AA2817D7F3004F70A7 /* WorkoutListInterface.swift in Sources */,
+				ADA322A3280F603800A89666 /* ExtensionDelegate.swift in Sources */,
+				ADA322A1280F603800A89666 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADA32290280F603700A89666 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADA3228C280F603700A89666 /* WatchLink-SDK-Sample WatchKit App */;
+			targetProxy = ADA3228F280F603700A89666 /* PBXContainerItemProxy */;
+		};
+		ADA3229E280F603800A89666 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADA3229A280F603800A89666 /* WatchLink-SDK-Sample WatchKit Extension */;
+			targetProxy = ADA3229D280F603800A89666 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADA32282280F603500A89666 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADA32283280F603500A89666 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADA32287280F603600A89666 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADA32288280F603600A89666 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ADA32292280F603700A89666 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADA32293280F603700A89666 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADA322AC280F603900A89666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADA322AD280F603900A89666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		ADA322AF280F603900A89666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B55FCA0C765ED5123D73094 /* Pods-WatchLink-SDK-Sample WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_ENTITLEMENTS = "WatchLink-SDK-Sample WatchKit Extension/WatchLink-SDK-Sample WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WGGJK9F34K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchLink-SDK-Sample WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = sample_app;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchLink_SDK_Sample_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We will use your health information to better track of your workouts.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We will use your health information to better track of your workouts.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = WatchLink_SDK_Sample_WatchKit_Extension.ExtensionDelegate;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.5;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rookdev.rookmotion.WatchLink-SDK-Sample.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		ADA322B0280F603900A89666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C7EB311A8CC5E219E1CC62D /* Pods-WatchLink-SDK-Sample WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_ENTITLEMENTS = "WatchLink-SDK-Sample WatchKit Extension/WatchLink-SDK-Sample WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WGGJK9F34K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchLink-SDK-Sample WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = sample_app;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchLink_SDK_Sample_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We will use your health information to better track of your workouts.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We will use your health information to better track of your workouts.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = WatchLink_SDK_Sample_WatchKit_Extension.ExtensionDelegate;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rookdev.rookmotion.WatchLink-SDK-Sample.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		ADA322B3280F603900A89666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88C9F7B6C82EF7330C3E39CE /* Pods-WatchLink-SDK-Sample WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WGGJK9F34K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WatchLink_SDK_Sample_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.rookdev.rookmotion.WatchLink-SDK-Sample";
+				MARKETING_VERSION = 1.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rookdev.rookmotion.WatchLink-SDK-Sample.watchkitapp";
+				PRODUCT_NAME = sample_app;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		ADA322B4280F603900A89666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A289A60411834763EED86B40 /* Pods-WatchLink-SDK-Sample WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WGGJK9F34K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WatchLink_SDK_Sample_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.rookdev.rookmotion.WatchLink-SDK-Sample";
+				MARKETING_VERSION = 1.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rookdev.rookmotion.WatchLink-SDK-Sample.watchkitapp";
+				PRODUCT_NAME = sample_app;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		ADA322B7280F603900A89666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66E900507A0BC1DEA0FA957C /* Pods-WatchLink-SDK-Sample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_ENTITLEMENTS = "WatchLink-SDK-Sample/WatchLink-SDK-Sample.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WGGJK9F34K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchLink-SDK-Sample/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Allow Bluetooth access to connect with your training sensors devices.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Allow Bluetooth access to connect with your training sensors devices.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We will use your health information to better track of your workouts.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We will use your health information to better track of your workouts.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rookdev.rookmotion.WatchLink-SDK-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		ADA322B8280F603900A89666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C5F2CB841AB48581E043A32 /* Pods-WatchLink-SDK-Sample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_ENTITLEMENTS = "WatchLink-SDK-Sample/WatchLink-SDK-Sample.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WGGJK9F34K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchLink-SDK-Sample/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Allow Bluetooth access to connect with your training sensors devices.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Allow Bluetooth access to connect with your training sensors devices.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We will use your health information to better track of your workouts.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We will use your health information to better track of your workouts.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rookdev.rookmotion.WatchLink-SDK-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADA32274280F603500A89666 /* Build configuration list for PBXProject "WatchLink-SDK-Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA322AC280F603900A89666 /* Debug */,
+				ADA322AD280F603900A89666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADA322AE280F603900A89666 /* Build configuration list for PBXNativeTarget "WatchLink-SDK-Sample WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA322AF280F603900A89666 /* Debug */,
+				ADA322B0280F603900A89666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADA322B2280F603900A89666 /* Build configuration list for PBXNativeTarget "WatchLink-SDK-Sample WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA322B3280F603900A89666 /* Debug */,
+				ADA322B4280F603900A89666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADA322B6280F603900A89666 /* Build configuration list for PBXNativeTarget "WatchLink-SDK-Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA322B7280F603900A89666 /* Debug */,
+				ADA322B8280F603900A89666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADA32271280F603500A89666 /* Project object */;
+}

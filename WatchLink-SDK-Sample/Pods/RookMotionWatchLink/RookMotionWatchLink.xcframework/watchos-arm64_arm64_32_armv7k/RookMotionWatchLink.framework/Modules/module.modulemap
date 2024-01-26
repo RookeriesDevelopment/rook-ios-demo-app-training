@@ -1,0 +1,11 @@
+framework module RookMotionWatchLink {
+  umbrella header "RookMotionWatchLink.h"
+
+  export *
+  module * { export * }
+}
+
+module RookMotionWatchLink.Swift {
+  header "RookMotionWatchLink-Swift.h"
+  requires objc
+}

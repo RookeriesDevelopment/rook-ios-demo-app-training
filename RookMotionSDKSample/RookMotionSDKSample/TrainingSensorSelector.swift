@@ -78,7 +78,7 @@ struct SensorSelectorViewCell: View {
         Text(sensor.name ?? "")
       }
     }).fullScreenCover(isPresented: $showTrainingSheet) {
-      TrainingViewRepresentable(sensor: sensor, trainingTypeUUID: trainingUUID)
+      TrainingView(viewModel: TrainingViewModel(sensor: sensor, trainingTypeUUID: trainingUUID), isTrainingViewActive: $showTrainingSheet)
     }
     
   }

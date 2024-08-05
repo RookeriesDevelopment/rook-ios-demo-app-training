@@ -908,6 +908,58 @@ extension RookMotionSDK.RMSensorDTO {
   public static func createSensorFromPeripheral(_ sensor: CoreBluetooth.CBPeripheral) -> RookMotionSDK.RMSensorDTO
   public func toDataBaseModel(context: CoreData.NSManagedObjectContext) -> RookMotionSDK.RMSensorEntity
 }
+public protocol RookTrainingManagerDelegate : AnyObject {
+  func durationUpdated(duration: Swift.Int)
+  func heartRateDataUpdated(hrData: RookMotionSDK.RMHrDerivedRecord)
+  func stepsUpdated(stepDerivedData: RookMotionSDK.RMStepDerivedRecord)
+  func batteryLevelUpdated(batteryLevel: Swift.Int)
+  func handleSensorDisconnected(peripheral: CoreBluetooth.CBPeripheral)
+  func handleSensorConnected(peripheral: CoreBluetooth.CBPeripheral)
+}
+public class RookTrainingManager {
+  final public let sensorManager: RookMotionSDK.RMSensorManager
+  open var sensorList: [CoreBluetooth.CBPeripheral]
+  open var isTrainingActive: Swift.Bool
+  open var isTimerRunning: Swift.Bool
+  open var firstStart: Swift.Bool
+  open var duration: Swift.Float {
+    get
+    set
+  }
+  public var timer: Foundation.Timer
+  public var training: RookMotionSDK.RMTrainingInfo
+  public var remoteClass: RookMotionSDK.RMRemoteClass?
+  public var trainingSensor: CoreBluetooth.CBPeripheral?
+  weak public var timerWatchDog: Foundation.Timer?
+  weak public var disconnectionCallBack: RookMotionSDK.RMTrainingSensorCallBack?
+  weak public var trainingDelegate: RookMotionSDK.RookTrainingManagerDelegate?
+  open func handleBadBandContact()
+  open func handleSensorDisconnected()
+  open func displayHrMeasurements(hrData: RookMotionSDK.RMHrDerivedRecord)
+  open func displayStepsMeasurements(stepDerivedData: RookMotionSDK.RMStepDerivedRecord)
+  open func displayBatteryLevel(batteryLevel: Swift.Int)
+  open func displaySensorProperties(rmSensor: CoreBluetooth.CBPeripheral)
+  public init()
+  public func runTimer()
+  public func scheduleWatchdog()
+  public func starTimerReconnection()
+  public func stopTimerReconnection()
+  public func loadUnfinishedTraining()
+  @objc deinit
+}
+extension RookMotionSDK.RookTrainingManager : RookMotionSDK.RMSensorConnectionCallback {
+  public func onSensorConnected(rmSensor: CoreBluetooth.CBPeripheral)
+  public func onSensorDisconnected(peripheral: CoreBluetooth.CBPeripheral)
+}
+extension RookMotionSDK.RookTrainingManager : RookMotionSDK.RMSensorCallback {
+  public func onHeartRateReceived(bpm: Swift.Int, badContact: Swift.Bool)
+  public func onStepsReceived(steps: Swift.Int, cadence: Swift.Float, deltaSteps: Swift.Int)
+  public func onBatteryReceived(batteryLevel: Swift.Int)
+}
+extension RookMotionSDK.RookTrainingManager : RookMotionSDK.RMSensorDiscoveryCallback {
+  public func onSensorDiscovered(sensorList: [CoreBluetooth.CBPeripheral])
+  public func onDiscoveryStopped(sensorList: [CoreBluetooth.CBPeripheral])
+}
 public struct RMTrainingResponse {
   public let uuid: Swift.String?
   public let trainingSummaries: RookMotionSDK.RMTrainingSummariesResult
@@ -1925,6 +1977,15 @@ public struct RMUseStepsDTO : Swift.Decodable {
     }
   }
   public init(from decoder: Swift.Decoder) throws
+}
+extension RookMotionSDK.RookTrainingManager {
+  public func startTraining(with trainingType: RookMotionSDK.RMTrainingTypeDTO? = nil)
+  public func connectSensor(_ sensor: CoreBluetooth.CBPeripheral)
+  public func pauseTraining()
+  public func finishTraining(sensor: CoreBluetooth.CBPeripheral? = nil)
+  public func finishTraining(sensor: CoreBluetooth.CBPeripheral? = nil, completion: @escaping (RookMotionSDK.RMResponse, RookMotionSDK.RMTrainingResponse) -> Swift.Void)
+  public func cancelTraining(sensor: CoreBluetooth.CBPeripheral?)
+  public func setSummariesData()
 }
 public protocol RMTrainingCallback {
   func onHeartRateDataReceived(hrData: RookMotionSDK.RMHrDerivedRecord)

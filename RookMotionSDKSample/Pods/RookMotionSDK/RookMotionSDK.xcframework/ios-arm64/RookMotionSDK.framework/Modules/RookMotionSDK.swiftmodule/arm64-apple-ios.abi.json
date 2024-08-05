@@ -2574,6 +2574,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookMotionSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
@@ -29127,6 +29137,2183 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookMotionSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "RookMotionSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RookTrainingManagerDelegate",
+        "printedName": "RookTrainingManagerDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "durationUpdated",
+            "printedName": "durationUpdated(duration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A23TrainingManagerDelegateP15durationUpdated0G0ySi_tF",
+            "mangledName": "$s13RookMotionSDK0A23TrainingManagerDelegateP15durationUpdated0G0ySi_tF",
+            "moduleName": "RookMotionSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : RookMotionSDK.RookTrainingManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : RookMotionSDK.RookTrainingManagerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "heartRateDataUpdated",
+            "printedName": "heartRateDataUpdated(hrData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RMHrDerivedRecord",
+                "printedName": "RookMotionSDK.RMHrDerivedRecord",
+                "usr": "s:13RookMotionSDK17RMHrDerivedRecordV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A23TrainingManagerDelegateP20heartRateDataUpdated02hrI0yAA17RMHrDerivedRecordV_tF",
+            "mangledName": "$s13RookMotionSDK0A23TrainingManagerDelegateP20heartRateDataUpdated02hrI0yAA17RMHrDerivedRecordV_tF",
+            "moduleName": "RookMotionSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : RookMotionSDK.RookTrainingManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : RookMotionSDK.RookTrainingManagerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stepsUpdated",
+            "printedName": "stepsUpdated(stepDerivedData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RMStepDerivedRecord",
+                "printedName": "RookMotionSDK.RMStepDerivedRecord",
+                "usr": "s:13RookMotionSDK19RMStepDerivedRecordC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A23TrainingManagerDelegateP12stepsUpdated15stepDerivedDatayAA06RMStepJ6RecordC_tF",
+            "mangledName": "$s13RookMotionSDK0A23TrainingManagerDelegateP12stepsUpdated15stepDerivedDatayAA06RMStepJ6RecordC_tF",
+            "moduleName": "RookMotionSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : RookMotionSDK.RookTrainingManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : RookMotionSDK.RookTrainingManagerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "batteryLevelUpdated",
+            "printedName": "batteryLevelUpdated(batteryLevel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A23TrainingManagerDelegateP19batteryLevelUpdated0gH0ySi_tF",
+            "mangledName": "$s13RookMotionSDK0A23TrainingManagerDelegateP19batteryLevelUpdated0gH0ySi_tF",
+            "moduleName": "RookMotionSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : RookMotionSDK.RookTrainingManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : RookMotionSDK.RookTrainingManagerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleSensorDisconnected",
+            "printedName": "handleSensorDisconnected(peripheral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A23TrainingManagerDelegateP24handleSensorDisconnected10peripheralySo12CBPeripheralC_tF",
+            "mangledName": "$s13RookMotionSDK0A23TrainingManagerDelegateP24handleSensorDisconnected10peripheralySo12CBPeripheralC_tF",
+            "moduleName": "RookMotionSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : RookMotionSDK.RookTrainingManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : RookMotionSDK.RookTrainingManagerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleSensorConnected",
+            "printedName": "handleSensorConnected(peripheral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A23TrainingManagerDelegateP21handleSensorConnected10peripheralySo12CBPeripheralC_tF",
+            "mangledName": "$s13RookMotionSDK0A23TrainingManagerDelegateP21handleSensorConnected10peripheralySo12CBPeripheralC_tF",
+            "moduleName": "RookMotionSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : RookMotionSDK.RookTrainingManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : RookMotionSDK.RookTrainingManagerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:13RookMotionSDK0A23TrainingManagerDelegateP",
+        "mangledName": "$s13RookMotionSDK0A23TrainingManagerDelegateP",
+        "moduleName": "RookMotionSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RookTrainingManager",
+        "printedName": "RookTrainingManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sensorManager",
+            "printedName": "sensorManager",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RMSensorManager",
+                "printedName": "RookMotionSDK.RMSensorManager",
+                "usr": "s:13RookMotionSDK15RMSensorManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC06sensorE0AA08RMSensorE0Cvp",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC06sensorE0AA08RMSensorE0Cvp",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RMSensorManager",
+                    "printedName": "RookMotionSDK.RMSensorManager",
+                    "usr": "s:13RookMotionSDK15RMSensorManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC06sensorE0AA08RMSensorE0Cvg",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC06sensorE0AA08RMSensorE0Cvg",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sensorList",
+            "printedName": "sensorList",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CoreBluetooth.CBPeripheral]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CBPeripheral",
+                    "printedName": "CoreBluetooth.CBPeripheral",
+                    "usr": "c:objc(cs)CBPeripheral"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC10sensorListSaySo12CBPeripheralCGvp",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC10sensorListSaySo12CBPeripheralCGvp",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CoreBluetooth.CBPeripheral]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CBPeripheral",
+                        "printedName": "CoreBluetooth.CBPeripheral",
+                        "usr": "c:objc(cs)CBPeripheral"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC10sensorListSaySo12CBPeripheralCGvg",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC10sensorListSaySo12CBPeripheralCGvg",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CoreBluetooth.CBPeripheral]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CBPeripheral",
+                        "printedName": "CoreBluetooth.CBPeripheral",
+                        "usr": "c:objc(cs)CBPeripheral"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC10sensorListSaySo12CBPeripheralCGvs",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC10sensorListSaySo12CBPeripheralCGvs",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC10sensorListSaySo12CBPeripheralCGvM",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC10sensorListSaySo12CBPeripheralCGvM",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isTrainingActive",
+            "printedName": "isTrainingActive",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC02isD6ActiveSbvp",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC02isD6ActiveSbvp",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC02isD6ActiveSbvg",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC02isD6ActiveSbvg",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC02isD6ActiveSbvs",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC02isD6ActiveSbvs",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC02isD6ActiveSbvM",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC02isD6ActiveSbvM",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isTimerRunning",
+            "printedName": "isTimerRunning",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC14isTimerRunningSbvp",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC14isTimerRunningSbvp",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC14isTimerRunningSbvg",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC14isTimerRunningSbvg",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC14isTimerRunningSbvs",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC14isTimerRunningSbvs",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC14isTimerRunningSbvM",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC14isTimerRunningSbvM",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "firstStart",
+            "printedName": "firstStart",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC10firstStartSbvp",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC10firstStartSbvp",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC10firstStartSbvg",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC10firstStartSbvg",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC10firstStartSbvs",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC10firstStartSbvs",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC10firstStartSbvM",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC10firstStartSbvM",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "duration",
+            "printedName": "duration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC8durationSfvp",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC8durationSfvp",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC8durationSfvg",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC8durationSfvg",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC8durationSfvs",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC8durationSfvs",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC8durationSfvM",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC8durationSfvM",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timer",
+            "printedName": "timer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Timer",
+                "printedName": "Foundation.Timer",
+                "usr": "c:objc(cs)NSTimer"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC5timerSo7NSTimerCvp",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC5timerSo7NSTimerCvp",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Timer",
+                    "printedName": "Foundation.Timer",
+                    "usr": "c:objc(cs)NSTimer"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC5timerSo7NSTimerCvg",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC5timerSo7NSTimerCvg",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Timer",
+                    "printedName": "Foundation.Timer",
+                    "usr": "c:objc(cs)NSTimer"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC5timerSo7NSTimerCvs",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC5timerSo7NSTimerCvs",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC5timerSo7NSTimerCvM",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC5timerSo7NSTimerCvM",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "training",
+            "printedName": "training",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RMTrainingInfo",
+                "printedName": "RookMotionSDK.RMTrainingInfo",
+                "usr": "s:13RookMotionSDK14RMTrainingInfoC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC8trainingAA14RMTrainingInfoCvp",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC8trainingAA14RMTrainingInfoCvp",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RMTrainingInfo",
+                    "printedName": "RookMotionSDK.RMTrainingInfo",
+                    "usr": "s:13RookMotionSDK14RMTrainingInfoC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC8trainingAA14RMTrainingInfoCvg",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC8trainingAA14RMTrainingInfoCvg",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RMTrainingInfo",
+                    "printedName": "RookMotionSDK.RMTrainingInfo",
+                    "usr": "s:13RookMotionSDK14RMTrainingInfoC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC8trainingAA14RMTrainingInfoCvs",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC8trainingAA14RMTrainingInfoCvs",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC8trainingAA14RMTrainingInfoCvM",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC8trainingAA14RMTrainingInfoCvM",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "remoteClass",
+            "printedName": "remoteClass",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "RookMotionSDK.RMRemoteClass?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RMRemoteClass",
+                    "printedName": "RookMotionSDK.RMRemoteClass",
+                    "usr": "s:13RookMotionSDK13RMRemoteClassC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC11remoteClassAA08RMRemoteG0CSgvp",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC11remoteClassAA08RMRemoteG0CSgvp",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "RookMotionSDK.RMRemoteClass?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RMRemoteClass",
+                        "printedName": "RookMotionSDK.RMRemoteClass",
+                        "usr": "s:13RookMotionSDK13RMRemoteClassC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC11remoteClassAA08RMRemoteG0CSgvg",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC11remoteClassAA08RMRemoteG0CSgvg",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "RookMotionSDK.RMRemoteClass?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RMRemoteClass",
+                        "printedName": "RookMotionSDK.RMRemoteClass",
+                        "usr": "s:13RookMotionSDK13RMRemoteClassC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC11remoteClassAA08RMRemoteG0CSgvs",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC11remoteClassAA08RMRemoteG0CSgvs",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC11remoteClassAA08RMRemoteG0CSgvM",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC11remoteClassAA08RMRemoteG0CSgvM",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "trainingSensor",
+            "printedName": "trainingSensor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreBluetooth.CBPeripheral?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CBPeripheral",
+                    "printedName": "CoreBluetooth.CBPeripheral",
+                    "usr": "c:objc(cs)CBPeripheral"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC14trainingSensorSo12CBPeripheralCSgvp",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC14trainingSensorSo12CBPeripheralCSgvp",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreBluetooth.CBPeripheral?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CBPeripheral",
+                        "printedName": "CoreBluetooth.CBPeripheral",
+                        "usr": "c:objc(cs)CBPeripheral"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC14trainingSensorSo12CBPeripheralCSgvg",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC14trainingSensorSo12CBPeripheralCSgvg",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreBluetooth.CBPeripheral?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CBPeripheral",
+                        "printedName": "CoreBluetooth.CBPeripheral",
+                        "usr": "c:objc(cs)CBPeripheral"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC14trainingSensorSo12CBPeripheralCSgvs",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC14trainingSensorSo12CBPeripheralCSgvs",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC14trainingSensorSo12CBPeripheralCSgvM",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC14trainingSensorSo12CBPeripheralCSgvM",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timerWatchDog",
+            "printedName": "timerWatchDog",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "Foundation.Timer?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC13timerWatchDogSo7NSTimerCSgvp",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC13timerWatchDogSo7NSTimerCSgvp",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Timer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Timer",
+                        "printedName": "Foundation.Timer",
+                        "usr": "c:objc(cs)NSTimer"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC13timerWatchDogSo7NSTimerCSgvg",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC13timerWatchDogSo7NSTimerCSgvg",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Timer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Timer",
+                        "printedName": "Foundation.Timer",
+                        "usr": "c:objc(cs)NSTimer"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC13timerWatchDogSo7NSTimerCSgvs",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC13timerWatchDogSo7NSTimerCSgvs",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC13timerWatchDogSo7NSTimerCSgvM",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC13timerWatchDogSo7NSTimerCSgvM",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "disconnectionCallBack",
+            "printedName": "disconnectionCallBack",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "RookMotionSDK.RMTrainingSensorCallBack?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC21disconnectionCallBackAA016RMTrainingSensorgH0_pSgvp",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC21disconnectionCallBackAA016RMTrainingSensorgH0_pSgvp",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "RookMotionSDK.RMTrainingSensorCallBack?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RMTrainingSensorCallBack",
+                        "printedName": "RookMotionSDK.RMTrainingSensorCallBack",
+                        "usr": "s:13RookMotionSDK24RMTrainingSensorCallBackP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC21disconnectionCallBackAA016RMTrainingSensorgH0_pSgvg",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC21disconnectionCallBackAA016RMTrainingSensorgH0_pSgvg",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "RookMotionSDK.RMTrainingSensorCallBack?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RMTrainingSensorCallBack",
+                        "printedName": "RookMotionSDK.RMTrainingSensorCallBack",
+                        "usr": "s:13RookMotionSDK24RMTrainingSensorCallBackP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC21disconnectionCallBackAA016RMTrainingSensorgH0_pSgvs",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC21disconnectionCallBackAA016RMTrainingSensorgH0_pSgvs",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC21disconnectionCallBackAA016RMTrainingSensorgH0_pSgvM",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC21disconnectionCallBackAA016RMTrainingSensorgH0_pSgvM",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "trainingDelegate",
+            "printedName": "trainingDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "RookMotionSDK.RookTrainingManagerDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC16trainingDelegateAA0adeG0_pSgvp",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC16trainingDelegateAA0adeG0_pSgvp",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "RookMotionSDK.RookTrainingManagerDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookTrainingManagerDelegate",
+                        "printedName": "RookMotionSDK.RookTrainingManagerDelegate",
+                        "usr": "s:13RookMotionSDK0A23TrainingManagerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC16trainingDelegateAA0adeG0_pSgvg",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC16trainingDelegateAA0adeG0_pSgvg",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "RookMotionSDK.RookTrainingManagerDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookTrainingManagerDelegate",
+                        "printedName": "RookMotionSDK.RookTrainingManagerDelegate",
+                        "usr": "s:13RookMotionSDK0A23TrainingManagerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC16trainingDelegateAA0adeG0_pSgvs",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC16trainingDelegateAA0adeG0_pSgvs",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC16trainingDelegateAA0adeG0_pSgvM",
+                "mangledName": "$s13RookMotionSDK0A15TrainingManagerC16trainingDelegateAA0adeG0_pSgvM",
+                "moduleName": "RookMotionSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "handleBadBandContact",
+            "printedName": "handleBadBandContact()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC20handleBadBandContactyyF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC20handleBadBandContactyyF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleSensorDisconnected",
+            "printedName": "handleSensorDisconnected()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC24handleSensorDisconnectedyyF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC24handleSensorDisconnectedyyF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "displayHrMeasurements",
+            "printedName": "displayHrMeasurements(hrData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RMHrDerivedRecord",
+                "printedName": "RookMotionSDK.RMHrDerivedRecord",
+                "usr": "s:13RookMotionSDK17RMHrDerivedRecordV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC21displayHrMeasurements6hrDatayAA17RMHrDerivedRecordV_tF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC21displayHrMeasurements6hrDatayAA17RMHrDerivedRecordV_tF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "displayStepsMeasurements",
+            "printedName": "displayStepsMeasurements(stepDerivedData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RMStepDerivedRecord",
+                "printedName": "RookMotionSDK.RMStepDerivedRecord",
+                "usr": "s:13RookMotionSDK19RMStepDerivedRecordC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC24displayStepsMeasurements15stepDerivedDatayAA06RMStepJ6RecordC_tF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC24displayStepsMeasurements15stepDerivedDatayAA06RMStepJ6RecordC_tF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "displayBatteryLevel",
+            "printedName": "displayBatteryLevel(batteryLevel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC19displayBatteryLevel07batteryH0ySi_tF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC19displayBatteryLevel07batteryH0ySi_tF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "displaySensorProperties",
+            "printedName": "displaySensorProperties(rmSensor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC23displaySensorProperties02rmG0ySo12CBPeripheralC_tF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC23displaySensorProperties02rmG0ySo12CBPeripheralC_tF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookTrainingManager",
+                "printedName": "RookMotionSDK.RookTrainingManager",
+                "usr": "s:13RookMotionSDK0A15TrainingManagerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerCACycfc",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerCACycfc",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "runTimer",
+            "printedName": "runTimer()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC8runTimeryyF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC8runTimeryyF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scheduleWatchdog",
+            "printedName": "scheduleWatchdog()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC16scheduleWatchdogyyF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC16scheduleWatchdogyyF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "starTimerReconnection",
+            "printedName": "starTimerReconnection()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC21starTimerReconnectionyyF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC21starTimerReconnectionyyF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopTimerReconnection",
+            "printedName": "stopTimerReconnection()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC21stopTimerReconnectionyyF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC21stopTimerReconnectionyyF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadUnfinishedTraining",
+            "printedName": "loadUnfinishedTraining()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC014loadUnfinishedD0yyF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC014loadUnfinishedD0yyF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSensorConnected",
+            "printedName": "onSensorConnected(rmSensor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC17onSensorConnected02rmG0ySo12CBPeripheralC_tF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC17onSensorConnected02rmG0ySo12CBPeripheralC_tF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSensorDisconnected",
+            "printedName": "onSensorDisconnected(peripheral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC20onSensorDisconnected10peripheralySo12CBPeripheralC_tF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC20onSensorDisconnected10peripheralySo12CBPeripheralC_tF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onHeartRateReceived",
+            "printedName": "onHeartRateReceived(bpm:badContact:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC19onHeartRateReceived3bpm10badContactySi_SbtF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC19onHeartRateReceived3bpm10badContactySi_SbtF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onStepsReceived",
+            "printedName": "onStepsReceived(steps:cadence:deltaSteps:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC15onStepsReceived5steps7cadence05deltaG0ySi_SfSitF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC15onStepsReceived5steps7cadence05deltaG0ySi_SfSitF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onBatteryReceived",
+            "printedName": "onBatteryReceived(batteryLevel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC17onBatteryReceived12batteryLevelySi_tF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC17onBatteryReceived12batteryLevelySi_tF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSensorDiscovered",
+            "printedName": "onSensorDiscovered(sensorList:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CoreBluetooth.CBPeripheral]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CBPeripheral",
+                    "printedName": "CoreBluetooth.CBPeripheral",
+                    "usr": "c:objc(cs)CBPeripheral"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC18onSensorDiscovered10sensorListySaySo12CBPeripheralCG_tF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC18onSensorDiscovered10sensorListySaySo12CBPeripheralCG_tF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDiscoveryStopped",
+            "printedName": "onDiscoveryStopped(sensorList:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CoreBluetooth.CBPeripheral]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CBPeripheral",
+                    "printedName": "CoreBluetooth.CBPeripheral",
+                    "usr": "c:objc(cs)CBPeripheral"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC18onDiscoveryStopped10sensorListySaySo12CBPeripheralCG_tF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC18onDiscoveryStopped10sensorListySaySo12CBPeripheralCG_tF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startTraining",
+            "printedName": "startTraining(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "RookMotionSDK.RMTrainingTypeDTO?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RMTrainingTypeDTO",
+                    "printedName": "RookMotionSDK.RMTrainingTypeDTO",
+                    "usr": "s:13RookMotionSDK17RMTrainingTypeDTOV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC05startD04withyAA17RMTrainingTypeDTOVSg_tF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC05startD04withyAA17RMTrainingTypeDTOVSg_tF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connectSensor",
+            "printedName": "connectSensor(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC13connectSensoryySo12CBPeripheralCF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC13connectSensoryySo12CBPeripheralCF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pauseTraining",
+            "printedName": "pauseTraining()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC05pauseD0yyF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC05pauseD0yyF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "finishTraining",
+            "printedName": "finishTraining(sensor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreBluetooth.CBPeripheral?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CBPeripheral",
+                    "printedName": "CoreBluetooth.CBPeripheral",
+                    "usr": "c:objc(cs)CBPeripheral"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC06finishD06sensorySo12CBPeripheralCSg_tF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC06finishD06sensorySo12CBPeripheralCSg_tF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "finishTraining",
+            "printedName": "finishTraining(sensor:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreBluetooth.CBPeripheral?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CBPeripheral",
+                    "printedName": "CoreBluetooth.CBPeripheral",
+                    "usr": "c:objc(cs)CBPeripheral"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookMotionSDK.RMResponse, RookMotionSDK.RMTrainingResponse) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(RookMotionSDK.RMResponse, RookMotionSDK.RMTrainingResponse)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RMResponse",
+                        "printedName": "RookMotionSDK.RMResponse",
+                        "usr": "s:13RookMotionSDK10RMResponseV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RMTrainingResponse",
+                        "printedName": "RookMotionSDK.RMTrainingResponse",
+                        "usr": "s:13RookMotionSDK18RMTrainingResponseV"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC06finishD06sensor10completionySo12CBPeripheralCSg_yAA10RMResponseV_AA18RMTrainingResponseVtctF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC06finishD06sensor10completionySo12CBPeripheralCSg_yAA10RMResponseV_AA18RMTrainingResponseVtctF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancelTraining",
+            "printedName": "cancelTraining(sensor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreBluetooth.CBPeripheral?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CBPeripheral",
+                    "printedName": "CoreBluetooth.CBPeripheral",
+                    "usr": "c:objc(cs)CBPeripheral"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC06cancelD06sensorySo12CBPeripheralCSg_tF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC06cancelD06sensorySo12CBPeripheralCSg_tF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSummariesData",
+            "printedName": "setSummariesData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13RookMotionSDK0A15TrainingManagerC16setSummariesDatayyF",
+            "mangledName": "$s13RookMotionSDK0A15TrainingManagerC16setSummariesDatayyF",
+            "moduleName": "RookMotionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13RookMotionSDK0A15TrainingManagerC",
+        "mangledName": "$s13RookMotionSDK0A15TrainingManagerC",
+        "moduleName": "RookMotionSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "RMSensorConnectionCallback",
+            "printedName": "RMSensorConnectionCallback",
+            "usr": "s:13RookMotionSDK26RMSensorConnectionCallbackP",
+            "mangledName": "$s13RookMotionSDK26RMSensorConnectionCallbackP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RMSensorCallback",
+            "printedName": "RMSensorCallback",
+            "usr": "s:13RookMotionSDK16RMSensorCallbackP",
+            "mangledName": "$s13RookMotionSDK16RMSensorCallbackP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RMSensorDiscoveryCallback",
+            "printedName": "RMSensorDiscoveryCallback",
+            "usr": "s:13RookMotionSDK25RMSensorDiscoveryCallbackP",
+            "mangledName": "$s13RookMotionSDK25RMSensorDiscoveryCallbackP"
+          }
         ]
       },
       {
@@ -73575,6 +75762,23 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookMotionSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "RookMotionSDK"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -97272,6 +99476,55 @@
       "value": "\"reward_type_uuid\""
     },
     {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/TrainingObject\/RookTrainingManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1156,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/TrainingObject\/RookTrainingManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1193,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/TrainingObject\/RookTrainingManager.swift",
+      "kind": "Array",
+      "offset": 1297,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/TrainingObject\/RookTrainingManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1336,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/TrainingObject\/RookTrainingManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1376,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/TrainingObject\/RookTrainingManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1412,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/TrainingObject\/RookTrainingManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 1450,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Master\/RMSettings.swift",
       "kind": "StringLiteral",
       "offset": 180,
@@ -99213,140 +101466,140 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/RMTrainingManager.swift",
       "kind": "Array",
-      "offset": 1861,
+      "offset": 1850,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/RMTrainingManager.swift",
       "kind": "Array",
-      "offset": 1908,
+      "offset": 1897,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/RMTrainingManager.swift",
       "kind": "Array",
-      "offset": 1955,
+      "offset": 1944,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/RMTrainingManager.swift",
       "kind": "Array",
-      "offset": 2002,
+      "offset": 1991,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/RMTrainingManager.swift",
       "kind": "StringLiteral",
-      "offset": 2194,
+      "offset": 2183,
       "length": 21,
       "value": "\"RookMotion_logo.png\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/RMTrainingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2288,
+      "offset": 2277,
       "length": 3,
       "value": "130"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/RMTrainingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2296,
+      "offset": 2285,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/RMTrainingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2307,
+      "offset": 2296,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/RMTrainingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2320,
+      "offset": 2309,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/RMTrainingManager.swift",
       "kind": "StringLiteral",
-      "offset": 2474,
+      "offset": 2463,
       "length": 18,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/RMTrainingManager.swift",
       "kind": "StringLiteral",
-      "offset": 2491,
+      "offset": 2480,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/RMTrainingManager.swift",
       "kind": "FloatLiteral",
-      "offset": 2428,
+      "offset": 2417,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/RMTrainingManager.swift",
       "kind": "StringLiteral",
-      "offset": 2568,
+      "offset": 2557,
       "length": 45,
       "value": "\"Delta Steps ahora \""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/RMTrainingManager.swift",
       "kind": "StringLiteral",
-      "offset": 2612,
+      "offset": 2601,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/RMTrainingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2540,
+      "offset": 2529,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/RMTrainingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2660,
+      "offset": 2649,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/RMTrainingManager.swift",
       "kind": "Array",
-      "offset": 2833,
+      "offset": 2822,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/RMTrainingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2931,
+      "offset": 2920,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/RMTrainingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3041,
+      "offset": 3030,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/iosSDK\/RookMotionSDK\/RookMotionSDK\/Source\/RookMotionLink\/Training\/RMTrainingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3138,
+      "offset": 3127,
       "length": 4,
       "value": "true"
     },

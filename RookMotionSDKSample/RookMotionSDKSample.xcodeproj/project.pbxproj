@@ -11,6 +11,8 @@
 		AD06304729F1B3EB00F34FDD /* MySensorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06304629F1B3EB00F34FDD /* MySensorsView.swift */; };
 		AD06304929F1B44700F34FDD /* MySensorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06304829F1B44700F34FDD /* MySensorViewModel.swift */; };
 		AD06304C29F1B53E00F34FDD /* UserSensorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06304B29F1B53E00F34FDD /* UserSensorViewModel.swift */; };
+		AD0D6F5B2C613C4B0059363F /* TrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D6F592C613C4A0059363F /* TrainingView.swift */; };
+		AD0D6F5C2C613C4B0059363F /* TrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D6F5A2C613C4B0059363F /* TrainingViewModel.swift */; };
 		AD447BDE293EF38900B6DB21 /* RookWatchSDKDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD447BDD293EF38900B6DB21 /* RookWatchSDKDemoApp.swift */; };
 		AD447BE0293EF38900B6DB21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD447BDF293EF38900B6DB21 /* ContentView.swift */; };
 		AD447BE2293EF38A00B6DB21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD447BE1293EF38A00B6DB21 /* Assets.xcassets */; };
@@ -53,6 +55,8 @@
 		AD06304629F1B3EB00F34FDD /* MySensorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySensorsView.swift; sourceTree = "<group>"; };
 		AD06304829F1B44700F34FDD /* MySensorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySensorViewModel.swift; sourceTree = "<group>"; };
 		AD06304B29F1B53E00F34FDD /* UserSensorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSensorViewModel.swift; sourceTree = "<group>"; };
+		AD0D6F592C613C4A0059363F /* TrainingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingView.swift; sourceTree = "<group>"; };
+		AD0D6F5A2C613C4B0059363F /* TrainingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingViewModel.swift; sourceTree = "<group>"; };
 		AD447BDB293EF38900B6DB21 /* RookWatchSDKDemo Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RookWatchSDKDemo Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD447BDD293EF38900B6DB21 /* RookWatchSDKDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RookWatchSDKDemoApp.swift; sourceTree = "<group>"; };
 		AD447BDF293EF38900B6DB21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 		AD66A2232910A4EF0057FCB9 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				AD0D6F592C613C4A0059363F /* TrainingView.swift */,
+				AD0D6F5A2C613C4B0059363F /* TrainingViewModel.swift */,
 				AD66A2242910A50A0057FCB9 /* TrainingSummaryView.swift */,
 			);
 			name = SwiftUI;
@@ -514,12 +520,14 @@
 				AD66A22F2910E6C20057FCB9 /* HomeView.swift in Sources */,
 				ADD4A48629118D01009D1CB9 /* UserInfoView.swift in Sources */,
 				ADD4A488291192DC009D1CB9 /* UserInfoViewModel.swift in Sources */,
+				AD0D6F5B2C613C4B0059363F /* TrainingView.swift in Sources */,
 				ADD4A48B2911964C009D1CB9 /* RookUserInfo.swift in Sources */,
 				ADD4A4802911042D009D1CB9 /* UserHome.swift in Sources */,
 				ADD4A4832911758B009D1CB9 /* AddUserViewModel.swift in Sources */,
 				ADD4A49029119F0E009D1CB9 /* UpdateUserInfoViewModel.swift in Sources */,
 				ADD4A47E29110387009D1CB9 /* AddUserView.swift in Sources */,
 				ADD4A4932911DB82009D1CB9 /* SensorScannerView.swift in Sources */,
+				AD0D6F5C2C613C4B0059363F /* TrainingViewModel.swift in Sources */,
 				ADD4A47C2910F87D009D1CB9 /* HomeHostingController.swift in Sources */,
 				AD4DB5BF2B61D5410087DB45 /* TrainingTypeSelector.swift in Sources */,
 				AD66A2252910A50A0057FCB9 /* TrainingSummaryView.swift in Sources */,
